@@ -21,9 +21,27 @@ header {
  cursor: pointer;
 }
 
-.nav-list {
+.overlay {
+ text-align: center;
+ padding: 64px;
+ opacity: 0;
+ pointer-events: none;
+}
+
+.overlay #close {
+ position: absolute;
+ top: 16px;
+ left: 16px;
+ font-size: 32px;
+ cursor: pointer;
+}
+
+.overlay ul {
  list-style: none;
 }
 
+.overlay li {
+ margin-top: 15px; 
+}
 
 
