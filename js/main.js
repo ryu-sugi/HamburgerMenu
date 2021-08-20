@@ -10,6 +10,7 @@
 
  // クリックする事でイベント発火させる為の記述
  open.addEventListener('click', () => {
-
+   overlay.classList.add('show'); //overlayのshowクラスを指定
+   open.classList.add('hide'); //openのhideクラスを指定
  });
 }

@@ -21,11 +21,21 @@ header {
  cursor: pointer;
 }
 
+.sp-menu #open.hide {
+ display: none;
+}
+
 .overlay {
  text-align: center;
  padding: 64px;
  opacity: 0;
  pointer-events: none;
+}
+
+.overlay.show {
+  opacity: 1; 
+  pointer-events: auto; /* クリックした後カーソル変化させる為の記述 */
+
 }
 
 .overlay #close {
