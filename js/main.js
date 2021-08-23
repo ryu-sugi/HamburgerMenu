@@ -17,7 +17,7 @@
    open.classList.add('hide'); //openのhideクラスを指定
  });
 
- open.addEventListener('click', () => {
+ close.addEventListener('click', () => {
   overlay.classList.remove('show'); 
   open.classList.remove('hide'); 
 });
