@@ -1,0 +1,62 @@
+html {
+ height:100%;
+}
+
+body {
+ font-family: Verdana, sans-serif;  /* ﾌｫﾝﾄ指定 */
+ height: 100%;
+}
+
+
+.sp-menu {
+ margin-right: auto;
+}
+
+.sp-menu #open {
+ font-size: 40px;
+ line-height: 64px;
+ cursor: pointer;  /* 指定した場所でカーソルの形を変形させる */
+
+}
+
+.sp-menu #open.hide {
+ display: none;
+}
+
+.overlay {
+ height: 100%;
+ text-align: center;
+ padding: 64px;
+ opacity: 0;
+ pointer-events: none;
+ transition: opacity .6s;  /* menu close時のアニメーション設定 */
+ background:  rgba(125, 125, 125, 0.95);}
+
+.overlay.show {
+  opacity: 1; 
+  pointer-events: auto; /* クリックした後カーソル変化させる為の記述 */
+
+}
+
+.overlay #close {
+ position: absolute;
+ top: 16px;
+ left: 16px;
+ font-size: 32px;
+ cursor: pointer;
+}
+
+.overlay ul {
+ list-style: none;
+}
+
+.overlay li {
+ margin-top: 50px; 
+}
+
+.overlay a {
+ color: white;
+ text-decoration: none;
+}
+
+
