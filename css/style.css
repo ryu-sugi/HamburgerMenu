@@ -1,7 +1,5 @@
 body {
-
- /* ﾌｫﾝﾄ指定 */
- font-family: Verdana, sans-serif;
+ font-family: Verdana, sans-serif;  /* ﾌｫﾝﾄ指定 */
 }
 
 header {
@@ -16,9 +14,8 @@ header {
 .sp-menu #open {
  font-size: 40px;
  line-height: 64px;
+ cursor: pointer;  /* 指定した場所でカーソルの形を変形させる */
 
- /* 指定した場所でカーソルの形を変形させる */
- cursor: pointer;
 }
 
 .sp-menu #open.hide {
@@ -30,7 +27,8 @@ header {
  padding: 64px;
  opacity: 0;
  pointer-events: none;
- transition: opacity .6s;
+ transition: opacity .6s;  /* menu close時のアニメーション設定 */
+
 }
 
 .overlay.show {
